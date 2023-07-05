@@ -1,9 +1,9 @@
-const AirPressure = () => {
+const AirPressure = ({ weather: { pressure } }) => {
   return (
     <div className="flex flex-col gap-3 p-5  w-80 h-40 bg-my-blue text-my-white text-base font-medium text-center">
       <p>Air Pressure</p>
       <h3 className="text-6xl font-bold">
-        998 <span className="font-medium text-4xl">mb</span>
+        {pressure} <span className="font-medium text-4xl">mb</span>
       </h3>
     </div>
   );
